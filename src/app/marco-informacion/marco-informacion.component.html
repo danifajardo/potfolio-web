@@ -1,0 +1,33 @@
+<div class="contenedor animate__animated animate__fadeInLeft">
+  <div class="pre-titulo">
+    Hola mi nombre es
+  </div>
+  <h1 class="titulo">
+    Daniel Felipe Fajardo Vargas
+  </h1>
+
+  <div class="foto">
+    <div class="cuadro-foto">
+      <img src="../../assets/foto de perfil cuadrada.jpeg" alt="">
+    </div>
+  </div>
+
+  <p class="descripcion">Estudiante de último semestre de Ingeniería en Mecatrónica de la Universidad Militar Nueva Granada. Conocimientos en lenguajes
+    de programación y metodologías agiles. Experiencia en desarrollo de proyectos de software. Hábil en el manejo de situaciones de presión, con capacidad para trabajar en
+    equipos interdisciplinarios.</p>
+
+
+
+  <div class="link-contenedor">
+    <hr>
+    <div class="links d-flex flex-wrap">
+      <div class="cuadro-link col-12 col-lg-4" *ngFor="let linkObj of links">
+        <a [href]="linkObj.link" target="_blank" rel="noopener noreferrer">
+          <div class="cuadro">
+            <i [innerHTML]="linkObj.icono"></i>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

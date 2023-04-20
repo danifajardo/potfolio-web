@@ -1,0 +1,97 @@
+<div class="contenedor animate__animated animate__fadeInDown">
+  <!--sección de logo o nombre-->
+  <div class="seccion-1">
+    <div class="icono">
+      <i class="uil uil-robot"></i>
+    </div>
+  </div>
+
+  <!--sección de links-->
+  <div class="seccion-2">
+    <ul class="lista-menu">
+      <li class="item-menu">
+        <span class="link" (click)="abrirInfo()">Más sobre mí</span>
+      </li>
+      <li class="item-menu">
+        <span class="link">Proyectos</span>
+      </li>
+      <li class="item-menu">
+        <span class="link" (click)="abrirFormulario()">Contactame</span>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<!-- modal para formulario de contacto -->
+
+<div class="contenedor2" id="ModalContacto">
+  <div class="contenedor-formulario">
+    <h1>¡Hablemos!</h1>
+    <i class="icono-formulario uil uil-times" (click) = "cerarFormulario()"></i>
+    <form #fomulario = "ngForm" >
+      <div class="mb-4">
+        <label for="nombre" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="nombre" name="nombre" ngModel required>
+        <div class="invalid-feedback">Este campo es requerido</div>
+      </div>
+      <div class="mb-4">
+        <label for="email" class="form-label">Correo Electrónico</label>
+        <input type="text" class="form-control" id="email" name="email">
+        <div class="invalid-feedback">Este campo es requerido</div>
+      </div>
+      <div class="mb-4">
+        <label for="mensaje" class="form-label">Mensaje</label>
+        <textarea class="form-control" rows="5" id="mesaje" placeholder="Escribe tu mensaje" name="mesaje"></textarea>
+        <div class="invalid-feedback">Este campo es requerido</div>
+      </div>
+      <div class="d-grid gap-2 col-6">
+        <button type="submit" class="btn btn-info btn-lg">Enviar</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<div class="contenedor3" id="ModalInfo">
+  <div class="contenedor-informacion">
+    <h1 class="mb-4">Infomación de interés</h1>
+    <i class="icono-informacion uil uil-times" (click) = "cerarInfo()"></i>
+    <div class="contenedor-scroll">
+      <h2 class="mb-3">Experiencia laboral</h2>
+        <ul>
+          <li>
+            <h6 class="fw-bold fs-5">MENSAJERO ALIADO (MENSAJEROS URBANOS) 2019-2020</h6>
+            <p>Trabaje como mensajero aliado con la plataforma para domicilios MU (Mensajeros Urbanos), donde
+              como mensajero aliado se me asignaban domicilios para diversos tipos de productos en un rango de
+              6 kilómetros; utilizando medios de pago efectivo y datafono. .</p>
+          </li>
+          <li>
+            <h6 class="fw-bold fs-5">SEMILLERO DE TECNOLOGÍA (SEGUROS BOLIVAR S.A) 2022 (marzo - mayo)</h6>
+            <p>En el programa de semilleros de tecnología se convocan personas interesadas en la programas y
+              durante tres meses se realiza una capacitación sobre las tecnologías que maneja la empresa, así como
+              en metodologías scrum.</p>
+          </li>
+        </ul>
+        <h2 class="mb-3">Educación</h2>
+        <ul>
+          <li>
+            <h6 class="fw-bold fs-5">Pregrado de Ingeniería en mecatrónca | Universidad Militar Nueva Granada (2018-2023)</h6>
+            <p>Carrera de 10 semestres con enfásis en el área de mecánica, electrónica, control y desarrollo de software.</p>
+          </li>
+          <li>
+            <h6 class="fw-bold fs-5">CURSO BÁSICO-AVANZADO DE JAVA EE (INTECAP)</h6>
+            <p>Curso que me permitió entender los fundamentos de la programación orientada a objetos, desarrollo
+              de aplicaciones en NetBeans</p>
+          </li>
+          <li>
+            <h6 class="fw-bold fs-5">CREACIÓN DE PAGINAS WEB (PLATZI)</h6>
+            <p>Creación y estructuración de páginas web con HTML, CSS y JavaScript. </p>
+          </li>
+        </ul>
+    </div>
+
+  </div>
+</div>
+
+
+
+

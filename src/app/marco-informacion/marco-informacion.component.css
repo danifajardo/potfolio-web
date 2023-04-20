@@ -1,0 +1,68 @@
+.contenedor{
+  padding: 1rem;
+}
+
+.pre-titulo{
+  padding: 0.5rem 0;
+  color: #403d39;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.titulo{
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.sub-titulo{
+ padding: 0.5rem 0;
+}
+
+.descripcion{
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 1rem;
+  line-height: 1.8rem;
+  letter-spacing: 0.2px;
+  color: #403d39;
+  text-align: justify;
+}
+
+.foto{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0px;
+}
+
+.cuadro-foto{
+  width: 50%;
+  height: 100%;
+  /* border-radius: 50%; */
+  /* border: 1px solid black; */
+}
+
+.cuadro-foto >img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+
+.cuadro-link{
+  height: 5rem;
+}
+
+.cuadro{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  font-size: 2rem;
+  background-color: #f9ede1;
+}
+
+a, a:visited, a:link{
+  color: burlywood;
+}
+

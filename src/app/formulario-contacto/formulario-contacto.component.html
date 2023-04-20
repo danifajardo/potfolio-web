@@ -1,0 +1,27 @@
+<div class="contenedor">
+  <div class="contenedor-formulario">
+    <h1>¡Hablemos!</h1>
+    <i class="icono uil uil-times"></i>
+    <form #fomulario = "ngForm" >
+      <div class="mb-4">
+        <label for="nombre" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="nombre" name="nombre" ngModel required>
+        <div class="invalid-feedback">Este campo es requerido</div>
+      </div>
+      <div class="mb-4">
+        <label for="email" class="form-label">Correo Electrónico</label>
+        <input type="text" class="form-control" id="email" name="email">
+        <div class="invalid-feedback">Este campo es requerido</div>
+      </div>
+      <div class="mb-4">
+        <label for="mensaje" class="form-label">Mensaje</label>
+        <textarea class="form-control" rows="5" id="mesaje" placeholder="Escribe tu mensaje" name="mesaje"></textarea>
+        <div class="invalid-feedback">Este campo es requerido</div>
+      </div>
+      <div class="d-grid gap-2 col-6">
+        <button type="submit" class="btn btn-info btn-lg">Enviar</button>
+      </div>
+    </form>
+  </div>
+</div>
+
